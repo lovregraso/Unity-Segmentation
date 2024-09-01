@@ -16,6 +16,6 @@ ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
 - Clone marus-example <br/>
   1. git clone git@github.com:MARUSimulator/marus-example.git <br/>
 - Position yourself in the previously cloned repository <br/>
-  2. cd marus-example <br/>
+  1. cd marus-example <br/>
 - Pull git submodules <br/>
   1. git submodule update –init --recursive <br/>
