@@ -11,11 +11,11 @@ In Unity Archive, find 2021.3.3f1 and install: <br/>
 ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
 - If you don't have one, create a GitHUb account <br/>
 - Before cloning, make sure to setup ssh with your GitHub account and git-lfs installed <br/>
-  -- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account <br/>
-  -- https://git-lfs.com <br/>
+  1. https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account <br/>
+  2. https://git-lfs.com <br/>
 - Clone marus-example <br/>
-  -- git clone git@github.com:MARUSimulator/marus-example.git <br/>
+  1. git clone git@github.com:MARUSimulator/marus-example.git <br/>
 - Position yourself in the previously cloned repository <br/>
-  -- cd marus-example <br/>
+  2. cd marus-example <br/>
 - Pull git submodules <br/>
-  -- git submodule update –init --recursive <br/>
+  1. git submodule update –init --recursive <br/>
