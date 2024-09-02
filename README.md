@@ -59,7 +59,7 @@ Make sure you have PCL library installed on your Ubuntu:
 ## Segmentation with PCD files
 In order for segmentation programs to run successfully, it is necessary to generate PCD files in Unity. Instructions on how to generate PCD files can be found here: https://marusimulator.github.io/Scripts/Annotation%20tools/PointcloudSemanticSegmentation.html  <br/>
 After PCD file is generated, it can be inserted in segmentation programs: euclideanSegmentation.cpp, ransac.cpp and regionGrowing.cpp. 
-in addition, 3 PCD files are placed for use.
+In addition, 3 PCD files are placed for use.
 ## Segmentation in real time
 Ros_segmentation_node.cpp is a program that segments objects while the unity scene is in the game mode. Idea is to subsribe to rostopic "/marus_boat/lidar" and using PCL convert ROS message into point cloud that would be used for segmentation. Algorithms can be changed manually, with region growing set as default. 
 ## Other
