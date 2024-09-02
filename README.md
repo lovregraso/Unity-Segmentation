@@ -49,4 +49,8 @@ ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
 7. build with colcon build in your workspace root <br/>
 8. source install/setup.bash <br/>
 9. Start grpc server: ros2 launch grpc_ros_adapter ros2_server_launch.py <br/>
-# Install segmentation_ros package 
+# Segmentation
+- git clone https://github.com/lovregraso/Unity-Segmentation.git
+- build again with colcon build in your workspace root <br/>
+## Segmentation with PCD files
+In order for segmentation programs to run successfully, it is necessary to generate PCD files in Unity. Instructions on how to generate PCD files can be found here: https://marusimulator.github.io/Scripts/Annotation%20tools/PointcloudSemanticSegmentation.html  <br/>
