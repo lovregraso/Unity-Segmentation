@@ -58,3 +58,5 @@ After PCD file is generated, it can be inserted in segmentation programs: euclid
 in addition, 3 pcd files are placed for use.
 ## Segmentation in real time
 Ros_segmentation_node is a program that segments objects while the unity scene is in the game mode. Idea is to subsribe to rostopic "/marus_boat/lidar" and using PCL convert ROS message into point cloud that would be used for segmentation. Algorithms can be changed manually, with region growing set as default. 
+## Other
+Remaining programs are used for analysis. New PCD files generated after segmentation are compared in cloudCompare.cpp and CalculateBoundingBox.cpp.  
