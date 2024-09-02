@@ -52,6 +52,10 @@ ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
 # Segmentation
 - git clone https://github.com/lovregraso/Unity-Segmentation.git
 - build again with colcon build in your workspace root <br/>
+## PCL library
+Make sure you have PCL library installed on your Ubuntu:
+- sudo apt update
+- sudo apt install libpcl-dev libboost-all-dev
 ## Segmentation with PCD files
 In order for segmentation programs to run successfully, it is necessary to generate PCD files in Unity. Instructions on how to generate PCD files can be found here: https://marusimulator.github.io/Scripts/Annotation%20tools/PointcloudSemanticSegmentation.html  <br/>
 After PCD file is generated, it can be inserted in segmentation programs: euclideanSegmentation.cpp, ransac.cpp and regionGrowing.cpp. 
