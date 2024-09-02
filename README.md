@@ -43,8 +43,7 @@ ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
    - switch branch: git switch galactic <br/>
 
 4. Pull git submodules <br/>
-
-a. git submodule update –init --recursive <br/>
+   - git submodule update –init --recursive <br/>
  
 5. install requirements <br/>
 
