@@ -33,7 +33,7 @@ ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
  ## Cloning grpc-ros-adapter and running the server 
  ReadMe also available here: https://github.com/MARUSimulator/grpc_ros_adapter/tree/galactic <br/>
 
-1. Create colcon workspace in WSL <br/>
+1. Create colcon workspace <br/>
 
 2. In workspace src folder clone grpc-ros-adapter a. git clone git@github.com:MARUSimulator/grpc_ros_adapter.git <br/>
 
