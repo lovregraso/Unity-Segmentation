@@ -146,8 +146,8 @@ void  FogFilteredPoints(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud){
 
 int main(int argc, char** argv) {
   
-    std::string label_file_path = "lidar_000046.label";
-    std::string pcd_file_path_orig = "original_magla.pcd";
+    std::string label_file_path = "insert.label";
+    std::string pcd_file_path_orig = "original.pcd";
     std::string pcd_file_path = "ground_truth_colored.pcd";
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_orig(new pcl::PointCloud<pcl::PointXYZRGB>);
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
@@ -168,7 +168,7 @@ int main(int argc, char** argv) {
 
 
 
-///*
+
     pcl::visualization::PCLVisualizer::Ptr viewer(new pcl::visualization::PCLVisualizer("Point Cloud Viewer"));
         viewer->setBackgroundColor(0, 0, 0);
         viewer->addPointCloud<pcl::PointXYZRGB>(cloud_orig, "cloud");
@@ -180,7 +180,7 @@ int main(int argc, char** argv) {
             viewer->spinOnce(1000000);
             std::this_thread::sleep_for(std::chrono::milliseconds(10000000));
         }
-   //     */
+   
     std::cout << "Saved " << cloud->points.size() << " data points to " << pcd_file_path << std::endl;
 
     return 0;
