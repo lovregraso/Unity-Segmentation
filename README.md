@@ -38,9 +38,9 @@ ReadMe also available here: https://github.com/MARUSimulator/marus-example <br/>
 2. In workspace src folder clone grpc-ros-adapter a. git clone git@github.com:MARUSimulator/grpc_ros_adapter.git <br/>
 
 3. Position yourself in the previously cloned repository <br/>
-  - cd grpc_ros_adapter <br/>
+   - cd grpc_ros_adapter <br/>
 
-  - switch branch: git switch galactic <br/>
+   - switch branch: git switch galactic <br/>
 
 4. Pull git submodules <br/>
 
@@ -48,16 +48,16 @@ a. git submodule update –init --recursive <br/>
  
 5. install requirements <br/>
 
--- optionally create python virtual environment for your workspace and then: <br/>
+   - optionally create python virtual environment for your workspace and then: <br/>
 
--- pip install -r requirements.txt <br/>
+   - pip install -r requirements.txt <br/>
 
 6. In workspace src folder clone uuv_sensor_msgs
--- git clone git@github.com:labust/uuv_sensor_msgs.git <br/>
+   - git clone git@github.com:labust/uuv_sensor_msgs.git <br/>
 
-b. cd uuv_sensor_msgs <br/>
+   - cd uuv_sensor_msgs <br/>
 
-c. switch branch: git switch galactic <br/>
+   - switch branch: git switch galactic <br/>
 
 7. build with colcon build in your workspace root <br/>
 
