@@ -31,7 +31,6 @@ add_executable(ros_segmentation_node src/ros_segmentation_node.cpp)
 add_executable(DBSCAN_node src/euclideanSegmentation.cpp)
 add_executable(region_growing_node src/regionGrowing.cpp)
 add_executable(ransac_node src/ransac.cpp)
-add_executable(read_labels src/read_labels.cpp)
 add_executable(compare_point_clouds src/cloudCompare.cpp)
 add_executable(calculate_bounding_box_node src/CalculateBoundingBox.cpp)
 
@@ -72,13 +71,6 @@ ament_target_dependencies(ransac_node
     std_msgs
 )
 
-ament_target_dependencies(read_labels
-    rclcpp 
-    pcl_conversions 
-    pcl_ros 
-    sensor_msgs 
-   std_msgs
-)
 
 ament_target_dependencies(compare_point_clouds
     rclcpp 
@@ -100,7 +92,6 @@ target_include_directories(ros_segmentation_node PRIVATE ${PCL_INCLUDE_DIRS})
 target_include_directories(DBSCAN_node PRIVATE ${PCL_INCLUDE_DIRS})
 target_include_directories(region_growing_node PRIVATE ${PCL_INCLUDE_DIRS})
 target_include_directories(ransac_node PRIVATE ${PCL_INCLUDE_DIRS})
-target_include_directories(read_labels PRIVATE ${PCL_INCLUDE_DIRS})
 target_include_directories(compare_point_clouds PRIVATE ${PCL_INCLUDE_DIRS})
 target_include_directories(calculate_bounding_box_node
 PRIVATE ${PCL_INCLUDE_DIRS})
@@ -110,7 +101,6 @@ target_link_libraries(ros_segmentation_node ${PCL_COMMON_LIBRARIES} ${PCL_VISUAL
 target_link_libraries(DBSCAN_node ${PCL_COMMON_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES})
 target_link_libraries(region_growing_node ${PCL_COMMON_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES})
 target_link_libraries(ransac_node ${PCL_COMMON_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES})
-target_link_libraries(read_labels ${PCL_COMMON_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES})
 target_link_libraries(compare_point_clouds ${PCL_COMMON_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES})
 target_link_libraries(calculate_bounding_box_node
 ${PCL_COMMON_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES})
